@@ -1,13 +1,58 @@
-{ 
-    "name": "liveblade", 
-    "version": "2.0.0", 
-    "description": "LiveBlade - AJAX components for Laravel Blade", 
-    "main": "dist/liveblade.min.js", 
-    "scripts": { 
-        "build": "vite build" 
-    }, 
-    "devDependencies": { 
-        "vite": "^4.0.0", 
-        "sass": "^1.69.0" 
-    } 
+{
+    "name": "liveblade",
+    "version": "2.0.0",
+    "description": "LiveBlade - AJAX components for Laravel Blade without JavaScript frameworks",
+    "main": "dist/liveblade.min.js",
+    "module": "dist/liveblade.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src/Views",
+        "src/*.php",
+        "config/*.php",
+        "routes/*.php"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "npm run build:js && npm run build:css",
+        "build:js": "vite build",
+        "build:css": "sass resources/css/liveblade.scss dist/liveblade.css --style=compressed",
+        "build:min": "terser dist/liveblade.js -o dist/liveblade.min.js",
+        "watch": "vite build --watch",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "vite": "^4.5.0",
+        "sass": "^1.69.5",
+        "terser": "^5.24.0"
+    },
+    "keywords": [
+        "laravel",
+        "blade",
+        "ajax",
+        "livewire",
+        "javascript",
+        "forms",
+        "pagination",
+        "search"
+    ],
+    "author": {
+        "name": "Eluk Samuel Kiira",
+        "email": "samuel@liveblade.com",
+        "url": "https://github.com/Eluk-Samuel-Kiira"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Eluk-Samuel-Kiira/liveblade.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Eluk-Samuel-Kiira/liveblade/issues"
+    },
+    "homepage": "https://github.com/Eluk-Samuel-Kiira/liveblade#readme",
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
 }

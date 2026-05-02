@@ -1,22 +1,37 @@
-{ 
-    "name": "liveblade/liveblade", 
-    "description": "LiveBlade - AJAX components for Laravel Blade", 
-    "type": "library", 
-    "license": "MIT", 
-    "require": { 
-        "php": "^8.0", 
-        "laravel/framework": "^9.0|^10.0|^11.0" 
-    }, 
-    "autoload": { 
-        "psr-4": { 
-            "LiveBlade\\": "src/" 
-        } 
-    }, 
-    "extra": { 
-        "laravel": { 
-            "providers": [ 
-                "LiveBlade\\LiveBladeServiceProvider" 
-            ] 
-        } 
-    } 
+{
+    "name": "eluk-samuel-kiira/liveblade",
+    "description": "LiveBlade - AJAX components for Laravel Blade without JavaScript frameworks",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eluk Samuel Kiira",
+            "email": "samuelkiiraeluk@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LiveBlade\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LiveBlade\\LiveBladeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Eluk-Samuel-Kiira/liveblade"
+        }
+    ]
 }
