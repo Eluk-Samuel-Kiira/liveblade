@@ -1,0 +1,22 @@
+{ 
+    "name": "liveblade/liveblade", 
+    "description": "LiveBlade - AJAX components for Laravel Blade", 
+    "type": "library", 
+    "license": "MIT", 
+    "require": { 
+        "php": "^8.0", 
+        "laravel/framework": "^9.0|^10.0|^11.0" 
+    }, 
+    "autoload": { 
+        "psr-4": { 
+            "LiveBlade\\": "src/" 
+        } 
+    }, 
+    "extra": { 
+        "laravel": { 
+            "providers": [ 
+                "LiveBlade\\LiveBladeServiceProvider" 
+            ] 
+        } 
+    } 
+}

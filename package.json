@@ -1,0 +1,13 @@
+{ 
+    "name": "liveblade", 
+    "version": "2.0.0", 
+    "description": "LiveBlade - AJAX components for Laravel Blade", 
+    "main": "dist/liveblade.min.js", 
+    "scripts": { 
+        "build": "vite build" 
+    }, 
+    "devDependencies": { 
+        "vite": "^4.0.0", 
+        "sass": "^1.69.0" 
+    } 
+}
